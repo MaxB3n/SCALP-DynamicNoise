@@ -1,0 +1,42 @@
+# CONFIG 
+
+configVersion: 1
+    
+design:
+    nTrials: 42 #should be mult of nconds AND nconds+bblanks AND even
+    questTrials: 50 #should be even
+    nConds: 5
+    nBlocks: 4 #per report condition
+    bBlanks: 1
+    sJitter: 0.4
+    sBufferReport: 0.5
+    sBufferNoReport: 1.0
+    nCoherentOutOfTen: 4
+    nDistractor: 6
+gabor:
+    sDuration: 0.1
+    dDimension: 6
+    nCyclePerDegree: 2
+    angle: 45
+    preContrastMult: 0.2
+    disableNorm: 1
+    dJitterXY: 1
+noise:
+    dDimension: 12
+    transp: 0.5
+    pSpatialFrequency: 2
+    sRefresh: 0.033
+pilot:
+    nStepsFromThreshold: 2
+    nConds: 7 
+    nBlocks: 5
+
+# !!! variable units are indicated by a lowercase letter for common unit types
+#       strings and arbitrary unit numeric values are not marked by a lowercase letter
+# n - integer count
+# b - boolean
+# c - character
+# s - time in seconds
+# d - degrees of visual angle, used to compute pixels depending on display settings
+# p - integer number of pixels
+# f - integer number of frames or refreshes 
